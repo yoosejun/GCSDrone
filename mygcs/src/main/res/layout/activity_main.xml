@@ -225,7 +225,7 @@
         android:layout_width="63dp"
         android:layout_height="35dp"
         android:layout_marginTop="40dp"
-        android:layout_marginEnd="60dp"
+        android:layout_marginEnd="85dp"
         android:background="@drawable/border"
         android:clickable="true"
         android:focusable="auto"
@@ -240,7 +240,7 @@
         android:layout_width="63dp"
         android:layout_height="35dp"
         android:layout_marginTop="2dp"
-        android:layout_marginEnd="60dp"
+        android:layout_marginEnd="85dp"
         android:background="@drawable/border"
         android:text="+0.5"
         android:textColor="#FFFFFF"
@@ -253,7 +253,7 @@
         android:layout_width="63dp"
         android:layout_height="35dp"
         android:layout_marginTop="2dp"
-        android:layout_marginEnd="60dp"
+        android:layout_marginEnd="85dp"
         android:background="@drawable/border"
         android:text="-0.5"
         android:textColor="#FFFFFF"
@@ -262,175 +262,193 @@
         app:layout_constraintTop_toBottomOf="@+id/altitudeUp" />
 
     <Button
-        android:id="@+id/btnmap"
+        android:id="@+id/btnMap"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="120dp"
+        android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
         android:background="@drawable/or_border"
-        android:onClick="onbtnmapc"
+        android:onClick="onMapSelect"
         android:text="일반지도"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toStartOf="@+id/btnLayerOn" />
 
     <Button
-        android:id="@+id/btnnmap"
+        android:id="@+id/btnBasicMap"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="120dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="2dp"
         android:background="@drawable/or_border"
-        android:onClick="onbtnnmapc"
+        android:onClick="onBasicMapSelected"
         android:text="일반지도"
         android:textColor="#ffffff"
         android:textSize="16sp"
         android:visibility="invisible"
-        app:layout_constraintBottom_toTopOf="@+id/btnmap"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/btnMap"
+        app:layout_constraintEnd_toStartOf="@+id/btnLayerOff" />
 
     <Button
-        android:id="@+id/btngmap"
+        android:id="@+id/btnTerrainMap"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="120dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="2dp"
         android:background="@drawable/border"
-        android:onClick="onbtngmapc"
+        android:onClick="onTerrainMapSelected"
         android:text="지형도"
         android:textColor="#ffffff"
         android:textSize="16sp"
         android:visibility="invisible"
-        app:layout_constraintBottom_toTopOf="@+id/btnnmap"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/btnBasicMap"
+        app:layout_constraintEnd_toStartOf="@+id/btnLayerOff" />
 
     <Button
-        android:id="@+id/btnsmap"
+        android:id="@+id/btnSatelliteMap"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="120dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="2dp"
         android:background="@drawable/border"
-        android:onClick="onbtnsmapc"
+        android:onClick="onSatelliteMapSelected"
         android:text="위성지도"
         android:textColor="#ffffff"
         android:textSize="16sp"
         android:visibility="invisible"
-        app:layout_constraintBottom_toTopOf="@+id/btngmap"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/btnTerrainMap"
+        app:layout_constraintEnd_toStartOf="@+id/btnLayerOff" />
 
     <Button
-        android:id="@+id/mbtngmap"
+        android:id="@+id/mbtnTerrainMap"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="120dp"
+        android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
         android:background="@drawable/border"
-        android:onClick="onmbtngmapc"
+        android:onClick="onmTerrainMapSelected"
         android:text="지형도"
         android:textColor="#ffffff"
         android:textSize="16sp"
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toStartOf="@+id/btnLayerOn" />
 
     <Button
-        android:id="@+id/mbtnsmap"
+        android:id="@+id/mbtnSatelliteMap"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="120dp"
+        android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
         android:background="@drawable/border"
-        android:onClick="onmbtnsmapc"
+        android:onClick="onmSatelliteMapSelected"
         android:text="위성지도"
         android:textColor="#ffffff"
         android:textSize="16sp"
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toStartOf="@+id/btnLayerOn" />
 
     <Button
-        android:id="@+id/mbtnnmap"
+        android:id="@+id/mbtnBasicMap"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="120dp"
+        android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
         android:background="@drawable/or_border"
-        android:onClick="onmbtnnmapc"
+        android:onClick="onmBasicMapSelected"
         android:text="일반지도"
         android:textColor="#ffffff"
         android:textSize="16sp"
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toStartOf="@+id/btnLayerOn" />
 
     <Button
-        android:id="@+id/btnmaplock"
+        android:id="@+id/btnMapLock"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="225dp"
+        android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
         android:background="@drawable/or_border"
-        android:onClick="onbtnmaplock"
+        android:onClick="onbtnMapLock"
         android:text="맵 잠금"
         android:textColor="#ffffff"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/map"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toStartOf="@+id/btnMap" />
 
     <Button
-        android:id="@+id/btnmaplocked"
+        android:id="@+id/mbtnMapLock"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="225dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="2dp"
         android:background="@drawable/or_border"
-        android:onClick="onbtnmaplocked"
+        android:onClick="onMapLock"
         android:text="맵 잠금"
         android:textColor="#ffffff"
         android:textSize="16sp"
         android:visibility="invisible"
-        app:layout_constraintBottom_toTopOf="@+id/btnmaplock"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/btnMapLock"
+        app:layout_constraintEnd_toStartOf="@+id/btnBasicMap" />
 
     <Button
-        android:id="@+id/btnmapmove"
+        android:id="@+id/mbtnMapMove"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="225dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="2dp"
         android:background="@drawable/border"
-        android:onClick="onbtnmapmove"
+        android:onClick="onMapMove"
         android:text="맵 이동"
         android:textColor="#ffffff"
         android:textSize="16sp"
         android:visibility="invisible"
-        app:layout_constraintBottom_toTopOf="@+id/btnmaplocked"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/mbtnMapLock"
+        app:layout_constraintEnd_toStartOf="@+id/btnTerrainMap" />
 
     <Button
-        android:id="@+id/btnlayeron"
+        android:id="@+id/btnLayerOn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="330dp"
+        android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
         android:background="@drawable/or_border"
-        android:onClick="onbtnlayer"
+        android:onClick="onLayerOn"
         android:text="지적도on"
         android:textColor="#ffffff"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/map"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toStartOf="@+id/btnConnect" />
 
     <Button
-        android:id="@+id/btnlayeroff"
+        android:id="@+id/btnLayerOff"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="330dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="2dp"
         android:background="@drawable/border"
-        android:onClick="onbtnlayeroff"
+        android:onClick="onLayerOff"
         android:text="지적도off"
         android:textColor="#ffffff"
         android:textSize="16sp"
         android:visibility="invisible"
-        app:layout_constraintBottom_toTopOf="@+id/btnlayeron"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/btnLayerOn"
+        app:layout_constraintEnd_toStartOf="@+id/btnClear" />
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/border"
+        android:text="CLEAR"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/btnConnect"
+        app:layout_constraintEnd_toEndOf="@+id/map" />
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recylerview"
@@ -440,5 +458,136 @@
         android:layout_marginTop="40dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnABdistance"
+        android:layout_width="65dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="245dp"
+        android:background="@drawable/border"
+        android:text="50m\nAB거리"
+        android:onClick="onbtndistance"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnABdistanceP"
+        android:layout_width="65dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="245dp"
+        android:background="@drawable/border"
+        android:text="+10"
+        android:visibility="invisible"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnABdistance" />
+
+    <Button
+        android:id="@+id/btnABdistanceM"
+        android:layout_width="65dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="245dp"
+        android:background="@drawable/border"
+        android:text="-10"
+        android:visibility="invisible"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnABdistanceP" />
+
+    <Button
+        android:id="@+id/btnflightwidth"
+        android:layout_width="65dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="165dp"
+        android:background="@drawable/border"
+        android:text="5.5m \n비행폭"
+        android:onClick="onbtnflightwidth"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="@+id/tableRow"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnflightwidthP"
+        android:layout_width="65dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="165dp"
+        android:background="@drawable/border"
+        android:text="+0.5"
+        android:visibility="invisible"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnflightwidth" />
+
+    <Button
+        android:id="@+id/btnflightwidthM"
+        android:layout_width="65dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="165dp"
+        android:background="@drawable/border"
+        android:text="-0.5"
+        android:visibility="invisible"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnflightwidthP" />
+
+    <Button
+        android:id="@+id/btnMission"
+        android:layout_width="65dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/border"
+        android:text="임무"
+        android:onClick="onbtnMission"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="@+id/tableRow"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnMissionAB"
+        android:layout_width="65dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/border"
+        android:text="AB"
+        android:visibility="invisible"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMission" />
+
+    <Button
+        android:id="@+id/btnMissionPolygon"
+        android:layout_width="65dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/border"
+        android:text="다각형"
+        android:visibility="invisible"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMissionAB" />
+
+    <Button
+        android:id="@+id/btnMissioncancel"
+        android:layout_width="65dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/border"
+        android:text="취소"
+        android:visibility="invisible"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMissionPolygon" />
+
 
 </android.support.constraint.ConstraintLayout>
